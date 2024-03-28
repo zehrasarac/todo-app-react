@@ -1,3 +1,7 @@
+
+![githup1](https://github.com/zehrasarac/todo-app-react/assets/60752226/10067844-535f-4b67-beec-9dfe124a26af)
+![githup2](https://github.com/zehrasarac/todo-app-react/assets/60752226/e96049ba-b736-434a-9da5-9742f8c2eac3)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
