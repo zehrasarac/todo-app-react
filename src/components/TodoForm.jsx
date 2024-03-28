@@ -32,9 +32,9 @@ const[todoValue,setTodoValue] = useState('')
         />
         <button
         onClick={(e) => {
-            e.preventDefault()
-           handleSubmit()
-           setTodoValue('')
+          e.preventDefault()
+          handleSubmit()
+          setTodoValue('')
         }}
         
         >
