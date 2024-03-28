@@ -1,11 +1,24 @@
 import React from 'react'
-import { useState,useEffect } from 'react';
+import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 export const TodoForm = ({setTodos,todos}) => {
 const[todoValue,setTodoValue] = useState('')
 
     const handleSubmit = (e) => {
+      if(todoValue === ''){
+        toast.error('Please enter a todo!')
+      }
+      else if(todos.includes(todoValue)){
+        toast.error('Todo already exists!')
+      }else if(todoValue.length<3){
+        toast.error('Todo must be at least 3 characters long!')
+      }else{
+        todoValue.trim()
         setTodos([...todos,todoValue])
+        toast.success("Todo added!")
+      }
+        
     }
 
   return (
